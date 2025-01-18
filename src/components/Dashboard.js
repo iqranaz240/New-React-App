@@ -13,24 +13,24 @@ import Grid from '@mui/material/Grid2';
 const NAVIGATION = [
   {
     kind: 'header',
-    title: 'Main items',
+    title: 'Main items'
   },
   {
     segment: 'dashboard',
     title: 'Dashboard',
-    icon: <DashboardIcon />,
+    icon: <DashboardIcon />
   },
   {
     segment: 'orders',
     title: 'Orders',
-    icon: <ShoppingCartIcon />,
+    icon: <ShoppingCartIcon />
   },
   {
-    kind: 'divider',
+    kind: 'divider'
   },
   {
     kind: 'header',
-    title: 'Analytics',
+    title: 'Analytics'
   },
   {
     segment: 'reports',
@@ -40,20 +40,20 @@ const NAVIGATION = [
       {
         segment: 'sales',
         title: 'Sales',
-        icon: <DescriptionIcon />,
+        icon: <DescriptionIcon />
       },
       {
         segment: 'traffic',
         title: 'Traffic',
-        icon: <DescriptionIcon />,
-      },
-    ],
+        icon: <DescriptionIcon />
+      }
+    ]
   },
   {
     segment: 'integrations',
     title: 'Integrations',
-    icon: <LayersIcon />,
-  },
+    icon: <LayersIcon />
+  }
 ];
 
 const demoTheme = extendTheme({
@@ -65,9 +65,9 @@ const demoTheme = extendTheme({
       sm: 600,
       md: 600,
       lg: 1200,
-      xl: 1536,
-    },
-  },
+      xl: 1536
+    }
+  }
 });
 
 function useDemoRouter(initialPath) {
@@ -77,7 +77,7 @@ function useDemoRouter(initialPath) {
     return {
       pathname,
       searchParams: new URLSearchParams(),
-      navigate: (path) => setPathname(String(path)),
+      navigate: (path) => setPathname(String(path))
     };
   }, [pathname]);
 
@@ -88,7 +88,7 @@ const Skeleton = styled('div')(({ theme, height }) => ({
   backgroundColor: theme.palette.action.hover,
   borderRadius: theme.shape.borderRadius,
   height,
-  content: '" "',
+  content: '" "'
 }));
 
 export default function DashboardLayoutBasic(props) {
@@ -100,12 +100,7 @@ export default function DashboardLayoutBasic(props) {
   const demoWindow = window ? window() : undefined;
 
   return (
-    <AppProvider
-      navigation={NAVIGATION}
-      router={router}
-      theme={demoTheme}
-      window={demoWindow}
-    >
+    <AppProvider navigation={NAVIGATION} router={router} theme={demoTheme} window={demoWindow}>
       <DashboardLayout>
         <PageContainer>
           <Grid container spacing={1}>

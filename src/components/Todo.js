@@ -1,13 +1,13 @@
-import React, {useState, useMemo, useCallback} from 'react'
+import React, { useState, useMemo, useCallback } from 'react';
 import Todosss from './Todosss';
 
 const expensiveCalculation = (num) => {
-    console.log("Calculating...");
-    for (let i = 0; i < 1000000000; i++) {
-      num += 1;
-    }
-    return num;
-  };
+  console.log('Calculating...');
+  for (let i = 0; i < 1000000000; i++) {
+    num += 1;
+  }
+  return num;
+};
 
 function Todo() {
   const [count, setCount] = useState(0);
@@ -19,8 +19,8 @@ function Todo() {
   };
 
   const addTodo = useCallback(() => {
-    console.log('add todo...')
-    setTodos((t) => [...t, "New Todo"]);
+    console.log('add todo...');
+    setTodos((t) => [...t, 'New Todo']);
   }, [todos]);
 
   return (
@@ -34,7 +34,7 @@ function Todo() {
         {calculation}
       </div>
     </div>
-  );    
+  );
 }
 
-export default Todo
+export default Todo;

@@ -1,13 +1,11 @@
-import { useState, useEffect, useRef } from "react";
-import "./App.css";
-import Todo from "./components/Todo";
+import './App.css';
+import Todo from './components/Todo';
 
 function App() {
-
   return (
     <>
-      <Todo/>
+      <Todo />
     </>
   );
 }
-export default App;  // Default export of the App component
+export default App; // Default export of the App component
