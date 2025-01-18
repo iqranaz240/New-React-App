@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Color(props) {
   const [color, setColor] = useState('Yellowwwwwwwww');
   const handleColorChange = () => {
-    setColor('Purpleeeeeeee');
+    setColor('Purpleeeeeeee')
   };
   return (
     <div>

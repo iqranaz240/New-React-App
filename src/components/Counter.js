@@ -4,9 +4,9 @@ function Counter(props) {
   return (
     <div>
       <h1>{props.name}</h1>
-      <Buttons />
+      <Buttons/>
     </div>
   );
 }
 
-export default Counter;
+export default Counter
