@@ -2,6 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import Todosss from './Todosss';
 
 const expensiveCalculation = (num) => {
+  const x = 1;
   console.log('Calculating...');
   for (let i = 0; i < 1000000000; i++) {
     num += 1;
